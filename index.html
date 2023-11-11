@@ -34,8 +34,12 @@
           const ctx = document.getElementById('myChart');
 
           new Chart(ctx, {
-            type: 'doughnut',
-            data = {
+            
+            const config = {
+              type: 'doughnut',
+              data: data,
+            };  
+            const data = {
               labels: [
                 'Red',
                 'Blue',
