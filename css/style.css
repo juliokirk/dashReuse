@@ -131,8 +131,7 @@ body {
 }
 */
 
-/*
-.myChart {
+.mainChart {
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
   display: flex;
@@ -140,7 +139,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-*/
+
+/*
 .timeBlock {
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
@@ -216,6 +216,7 @@ body {
   font-size: var(--fss);
   margin-left: 15px;
   color: var(--fg);
+*/
 }
 
 .buttonLink {
