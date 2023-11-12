@@ -2,10 +2,10 @@ const ctx = document.getElementById("myChart");
 const myChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['OK', 'WARNING', 'CRITICAL', 'UNKNOWN'],
+    labels: ['Plástico', 'Metal', 'Vidro', 'Orgânicos', 'Rejeitos'],
     datasets: [{
-      label: '# of Tomatoes',
-      data: [12, 19, 3, 5],
+      label: 'Kg',
+      data: [1002.56, 4385.55, 1560.75, 433.2, 10.72],
       backgroundColor: [
         'rgba(255, 99, 132, 1)',
         'rgba(54, 162, 235, 1)',
