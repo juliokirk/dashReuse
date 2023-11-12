@@ -314,7 +314,7 @@ body {
 
 /* M E D I A - Q U E R I E S */
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 1000px) {
   :root {
     --fsg: 100px;
     --fsm: 65px;
@@ -356,6 +356,5 @@ body {
     padding-left: 100px;
     padding-right: 100px;
   }
-}
 */
 }
