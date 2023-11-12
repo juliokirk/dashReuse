@@ -332,7 +332,10 @@ body {
   }
 
   .logoBlock {
-    display: none;
+    grid-column: 1 / span 4;
+    grid-gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   #greetings {
@@ -343,6 +346,7 @@ body {
     display: none;
   }
 
+/*
   .buttonLink {
     grid-column: 1 / span 4;
     grid-gap: 20px;
@@ -350,3 +354,4 @@ body {
     padding-right: 100px;
   }
 }
+*/
