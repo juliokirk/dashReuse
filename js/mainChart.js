@@ -23,7 +23,7 @@ const myChart = new Chart(ctx, {
   },
   options: {
    	//cutoutPercentage: 40,
-    responsive: false,
+    responsive: true,
 
   }
 });
