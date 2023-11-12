@@ -326,12 +326,12 @@ body {
     padding: 40px;
   }
 
-  .timeBlock {
+  .graphBlock {
     grid-row: 1 / span 4;
     grid-column: 1 / span 4;
   }
 
-  .weatherBlock {
+  .logoBlock {
     display: none;
   }
 
