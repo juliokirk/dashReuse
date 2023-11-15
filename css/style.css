@@ -14,7 +14,7 @@
   --fses: 16px; /* Links List */
 
   /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #CF8D61; /* Hover color */
 /*  --bg: #f5f5f5;  Background color */
   --bg: #F0E6CE; /* Background color */
   --sbg: #e4e6e6; /* Cards color */
@@ -39,9 +39,9 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #86502B; /* Hover color */
 /*  --bg: #19171a;  Background color */
-  --bg: #241B05; /* Background color */
+  --bg: rgb(10 19 3); /* Background color */
   --sbg: #201e21; /* Cards color */
   --fg: #d8dee9; /* Foreground color */
   --tp: rgba(0, 0, 0, 0.0); 
@@ -86,11 +86,14 @@ body {
   border: none;
   cursor: pointer;
   background-color: #00000000;
+  display: inline-flex;
+  align-items: center;
 }
 
 #themeButton__icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
 /* #settingsButton {
@@ -134,17 +137,6 @@ body {
 }
 */
 
-/*
-.mainChart {
-  grid-row: 3 / span 5;
-  grid-column: 3 / span 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
 .titleBlock {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
@@ -167,11 +159,57 @@ body {
 .partnersBlock {
   grid-column: 1 / span 2;
   grid-row: 3 / span 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 20px;
 }
+
+.partnersBlock__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--tp);
+}
+
+.partnersBlock__icon {
+  width: 53px;
+  height: 53px;
+  color: var(--fg);
+}
+
+.partnersBlock__link-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+.partnersBlock__link-2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.partnersBlock__link-3 {
+  grid-row: 2;
+  grid-column: 1;
+}
+.partnersBlock__link-4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.partnersBlock__link-5 {
+  grid-row: 1;
+  grid-column: 3;
+}
+.partnersBlock__link-6 {
+  grid-row: 2;
+  grid-column: 3;
+}
+.partnersBlock__link:hover {
+  background-color: var(--accent);
+}
+/* .partnersBlock__link:hover svg {
+  stroke: var(--sfg);
+}*/
 
 .logoBlock {
   grid-column: 3 / span 2;
@@ -242,61 +280,6 @@ body {
   color: var(--fg);
 }
 
-.buttonLink {
-  grid-row: 3 / span 2;
-  grid-column: 1 / span 2;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 30px;
-  padding: 20px;
-}
-
-.buttonLink__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: var(--tp);
-}
-
-.buttonLink__icon {
-  width: 23px;
-  height: 23px;
-  color: var(--fg);
-}
-
-.buttonLink__link-1 {
-  grid-row: 1;
-  grid-column: 1;
-}
-.buttonLink__link-2 {
-  grid-row: 1;
-  grid-column: 2;
-}
-.buttonLink__link-3 {
-  grid-row: 2;
-  grid-column: 1;
-}
-.buttonLink__link-4 {
-  grid-row: 2;
-  grid-column: 2;
-}
-.buttonLink__link-5 {
-  grid-row: 1;
-  grid-column: 3;
-}
-.buttonLink__link-6 {
-  grid-row: 2;
-  grid-column: 3;
-}
-.buttonLink__link:hover {
-  background-color: var(--accent);
-}
-.buttonLink__link:hover svg {
-  stroke: var(--sfg);
-}
-
 .list {
   display: flex;
   align-items: center;
@@ -347,14 +330,25 @@ body {
     padding: 40px;
   }
 
-  /*.logoBlock {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 1;  
-    grid-gap: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 200px;
-  }*/
+  #themeButton {
+    position: absolute;
+    margin: 2em 2em 0 0;
+    right: 0;
+    top: 0;
+    color: var(--fg);
+    border: none;
+    cursor: pointer;
+    background-color: #00000000;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  #themeButton__icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
 
   .titleBlock {
     grid-column: 1 / span 4;
@@ -383,6 +377,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    grid-gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   
   .logoBlock {
