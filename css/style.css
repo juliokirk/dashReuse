@@ -341,7 +341,7 @@ body {
     background-color: #00000000;
     display: inline-flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   #themeButton__icon {
@@ -367,7 +367,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   
   .partnersBlock {
