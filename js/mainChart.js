@@ -6,18 +6,18 @@ let vidro = 1727.03
 let orgs = 433.2
 let rejs = 10.72
 
-let total = plas + metal + vidro + orgs + rejs
+const total = plas + metal + vidro + orgs + rejs
 
 function percentage(number, sum){
   let perc = (number/sum)*100
   return Math.round(perc * 10)/10
 }
 
-let div1 =  percentage(plas, total)
-let div2 =  percentage(metal, total)
-let div3 =  percentage(vidro, total)
-let div4 =  percentage(orgs, total)
-let div5 =  percentage(rejs, total)
+let perc1 =  percentage(plas, total)
+let perc2 =  percentage(metal, total)
+let perc3 =  percentage(vidro, total)
+let perc4 =  percentage(orgs, total)
+let perc5 =  percentage(rejs, total)
 
 const myChart = new Chart(ctx, {
   type: 'pie',
@@ -25,7 +25,7 @@ const myChart = new Chart(ctx, {
     labels: ['Plástico (' + plas + ' Kg)', 'Metal (' + metal + ' Kg)', 'Vidro (' + vidro + ' Kg)', 'Orgânicos (' + orgs + ' Kg)', 'Rejeitos (' + rejs + ' Kg)'],
     datasets: [{
       label: 'Parcela do total (em %)',
-      data: [div1, div2, div3, div4, div5],
+      data: [perc1, perc2, perc3, perc4, perc5],
       backgroundColor: [
         'rgba(173, 38, 23, 1)',
         'rgba(173, 151, 23, 1)',
