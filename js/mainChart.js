@@ -26,6 +26,15 @@ const myChart = new Chart(ctx, {
   options: {
    	//cutoutPercentage: 40,
     responsive: true,
-
+    
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            size: 20
+          }
+        }
+      }
+    }
   }
 });

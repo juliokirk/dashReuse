@@ -335,7 +335,7 @@ body {
 
 /* M E D I A - Q U E R I E S */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   :root {
     --fsg: 100px;
     --fsm: 65px;
@@ -347,22 +347,61 @@ body {
     padding: 40px;
   }
 
-  .graphBlock {
-    grid-column: 1 / span 4;
-    grid-row: 3 / span 2;
-    
-  }
-
-  .logoBlock {
+  /*.logoBlock {
     grid-column: 1 / span 4;
     grid-row: 1 / span 1;  
     grid-gap: 40px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 200px;
-  }
+  }*/
 
-  #greetings {
+  .titleBlock {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .graphBlock {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+  .partnersBlock {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoBlock {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+
+
+
+
+
+
+/*  #greetings {
     font-size: var(--fss);
   }
 
